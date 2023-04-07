@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="take">
+      <a href="take-quiz.html">Take quiz</a>
+    </div>
+    <div class="container">
+      <p>Create quiz</p>
+      <form>
+        <div class="qst">
+          <label>Question</label>
+          <input
+            type="text"
+            placeholder="enter your question"
+            class="question"
+            required
+          />
+          <label>Options</label>
+          <input
+            type="text"
+            placeholder="enter option 1"
+            class="answera"
+            required
+          />
+          <input
+            type="text"
+            placeholder="enter option 2"
+            class="answerb"
+            required
+          />
+          <input
+            type="text"
+            placeholder="enter option 3"
+            class="answerc"
+            required
+          />
+          <input
+            type="text"
+            placeholder="enter option 4"
+            class="answerd"
+            required
+          />
+          <label>Correct answer</label>
+          <input type="text" placeholder="Enter the correct answer from the options" class="correct"/>
+        </div>
+        <button onclick="createQuiz(event)" class="create-btn">Create quiz</button>
+        <p class="err"></p>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

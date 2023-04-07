@@ -1,0 +1,86 @@
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    margin: 3rem auto;
+    box-shadow: 1px 1px 10px gray;
+    padding: 2rem;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+    height:80vh;
+}
+
+.container p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+.qst{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.qst input{
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1rem;
+    outline-color: rgb(226, 220, 231);
+}
+form button{
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+.err{
+    color: red;
+    padding-top: 1rem;
+}
+.take{
+    padding: 1rem;
+    text-align: center;
+}
+.take a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 22px;
+}
+.answerBtn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.answerBtn button, .sub, .submit{
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.eachqst{
+    background-color: #fff;
+    position: absolute;
+    margin: 2rem 0;
+    z-index: 1;
+    height: 50vh;
+    width: 80%;
+}
+.eachans{
+    width: 20%;
+    display: flex;
+}
+.sub,.submit{
+    width: 20%;
+}
+
+@media (max-width:997px) {
+    .container{
+        width: 90%;
+    }
+    .eachans, .sub, .submit{
+        width: 50%;
+    }
+}
